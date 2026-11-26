@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- [LDEV-2248](https://luceeserver.atlassian.net/browse/LDEV-2248) — `json` layout: new ISO-8601 `timestamp` field, `thread` keeps the thread name (the id and priority are now written as `threadId` and `threadPriority`, they used to replace the name), and the cause chain is written to `thrown.cause`
+
 ## 1.0.0.1-BETA
 
 - [LDEV-6810](https://luceeserver.atlassian.net/browse/LDEV-6810) — automatic version: the version is built from `extension.version.base`, a build number and a qualifier, every push to the default branch publishes the next build (highest of git tags, Maven Central and Central snapshots + 1) to Maven Central and as a GitHub release, and a manual run can publish an ALPHA, BETA, RC, SNAPSHOT or final build. 1.0.0.0-BETA was already on Maven Central, so the first automatic version is 1.0.0.1-BETA
